@@ -3,8 +3,11 @@
 project_name: cassetteos-message-bus
 before:
   hooks:
+    - rm -rf third_party_licenses
     - go generate
     - go run github.com/google/go-licenses@latest check . --disallowed_types=restricted
+    - bash -c 'go run github.com/google/go-licenses@latest save . --save_path=third_party_licenses || true'
+    - bash -c 'cp -r license_overrides/* third_party_licenses/ || true'
     - go mod tidy
     - go test -race -v ./...
 builds:
@@ -18,6 +21,7 @@ builds:
     ldflags:
       - -X main.commit={{.Commit}}
       - -X main.date={{.Date}}
+      - -X main.Version={{.Version}} 
       - -s
       - -w
       - -extldflags "-static"
@@ -39,6 +43,7 @@ builds:
     ldflags:
       - -X main.commit={{.Commit}}
       - -X main.date={{.Date}}
+      - -X main.Version={{.Version}} 
       - -s
       - -w
       - -extldflags "-static"
@@ -60,6 +65,7 @@ builds:
     ldflags:
       - -X main.commit={{.Commit}}
       - -X main.date={{.Date}}
+      - -X main.Version={{.Version}} 
       - -s
       - -w
       - -extldflags "-static"
@@ -84,6 +90,7 @@ builds:
     ldflags:
       - -X main.commit={{.Commit}}
       - -X main.date={{.Date}}
+      - -X main.Version={{.Version}} 
       - -s
       - -w
       - -extldflags "-static"
@@ -106,6 +113,7 @@ builds:
     ldflags:
       - -X main.commit={{.Commit}}
       - -X main.date={{.Date}}
+      - -X main.Version={{.Version}} 
       - -s
       - -w
       - -extldflags "-static"
@@ -128,6 +136,7 @@ builds:
     ldflags:
       - -X main.commit={{.Commit}}
       - -X main.date={{.Date}}
+      - -X main.Version={{.Version}} 
       - -s
       - -w
       - -extldflags "-static"
@@ -151,6 +160,7 @@ archives:
       - cassetteos-message-bus-arm-7
     files:
       - build/**/*
+      - third_party_licenses
   - name_template: >-
       {{ .Os }}-{{- if eq .Arch "arm" }}arm-7{{- else }}{{ .Arch }}{{- end }}-{{ .ProjectName }}-migration-tool-v{{ .Version }}
     id: cassetteos-message-bus-migration-tool
@@ -160,6 +170,7 @@ archives:
       - cassetteos-message-bus-migration-tool-arm-7
     files:
       - build/sysroot/etc/**/*
+      - third_party_licenses
 checksum:
   name_template: "checksums.txt"
 snapshot:

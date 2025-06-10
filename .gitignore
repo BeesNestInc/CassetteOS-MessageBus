@@ -26,3 +26,4 @@ dist/
 up.sh
 CassetteOS-MessageBus
 codegen/
+third_party_licenses/
