@@ -3,9 +3,9 @@ package out
 import (
 	"time"
 
-	"github.com/IceWhaleTech/CasaOS-Common/utils"
-	"github.com/IceWhaleTech/CasaOS-MessageBus/codegen"
-	"github.com/IceWhaleTech/CasaOS-MessageBus/model"
+	"github.com/BeesNestInc/CassetteOS-Common/utils"
+	"github.com/BeesNestInc/CassetteOS-MessageBus/codegen"
+	"github.com/BeesNestInc/CassetteOS-MessageBus/model"
 )
 
 func ActionAdapter(action model.Action) codegen.Action {

@@ -6,12 +6,12 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/IceWhaleTech/CasaOS-Common/utils/logger"
-	"github.com/IceWhaleTech/CasaOS-MessageBus/common"
-	"github.com/IceWhaleTech/CasaOS-MessageBus/model"
-	"github.com/IceWhaleTech/CasaOS-MessageBus/pkg/ysk"
-	"github.com/IceWhaleTech/CasaOS-MessageBus/repository"
-	"github.com/IceWhaleTech/CasaOS-MessageBus/utils"
+	"github.com/BeesNestInc/CassetteOS-Common/utils/logger"
+	"github.com/BeesNestInc/CassetteOS-MessageBus/common"
+	"github.com/BeesNestInc/CassetteOS-MessageBus/model"
+	"github.com/BeesNestInc/CassetteOS-MessageBus/pkg/ysk"
+	"github.com/BeesNestInc/CassetteOS-MessageBus/repository"
+	"github.com/BeesNestInc/CassetteOS-MessageBus/utils"
 	"go.uber.org/zap"
 )
 
@@ -89,8 +89,8 @@ func (s *YSKService) Start(init bool) {
 	// so we had to register it here.
 	// but i think is not a good idea. it should register by who call it.
 	s.eventTypeService.RegisterEventType(model.EventType{
-		SourceID: "casaos-ui",
-		Name:     "casaos-ui:app:mircoapp_communicate",
+		SourceID: "cassetteos-ui",
+		Name:     "cassetteos-ui:app:mircoapp_communicate",
 	})
 
 	channel, err := s.ws.Subscribe(common.SERVICENAME, []string{

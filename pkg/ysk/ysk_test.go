@@ -5,12 +5,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/IceWhaleTech/CasaOS-Common/utils/logger"
-	"github.com/IceWhaleTech/CasaOS-MessageBus/model"
-	"github.com/IceWhaleTech/CasaOS-MessageBus/pkg/ysk"
-	"github.com/IceWhaleTech/CasaOS-MessageBus/repository"
-	"github.com/IceWhaleTech/CasaOS-MessageBus/service"
-	"github.com/IceWhaleTech/CasaOS-MessageBus/utils"
+	"github.com/BeesNestInc/CassetteOS-Common/utils/logger"
+	"github.com/BeesNestInc/CassetteOS-MessageBus/model"
+	"github.com/BeesNestInc/CassetteOS-MessageBus/pkg/ysk"
+	"github.com/BeesNestInc/CassetteOS-MessageBus/repository"
+	"github.com/BeesNestInc/CassetteOS-MessageBus/service"
+	"github.com/BeesNestInc/CassetteOS-MessageBus/utils"
 	"gotest.tools/assert"
 )
 

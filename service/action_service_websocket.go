@@ -5,9 +5,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/IceWhaleTech/CasaOS-Common/utils/logger"
-	"github.com/IceWhaleTech/CasaOS-MessageBus/common"
-	"github.com/IceWhaleTech/CasaOS-MessageBus/model"
+	"github.com/BeesNestInc/CassetteOS-Common/utils/logger"
+	"github.com/BeesNestInc/CassetteOS-MessageBus/common"
+	"github.com/BeesNestInc/CassetteOS-MessageBus/model"
 	"go.uber.org/zap"
 )
 
