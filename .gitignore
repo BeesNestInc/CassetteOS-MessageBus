@@ -24,4 +24,8 @@ dist/
 .idea
 .package-lock.json
 up.sh
-CasaOS-MessageBus
+CassetteOS-MessageBus
+codegen/
+third_party_licenses/
+openapitools.json
+yarn.lock

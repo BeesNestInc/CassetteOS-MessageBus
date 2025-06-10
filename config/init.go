@@ -5,9 +5,9 @@ import (
 	"log"
 	"os"
 
-	"github.com/IceWhaleTech/CasaOS-Common/utils/constants"
-	"github.com/IceWhaleTech/CasaOS-MessageBus/common"
-	"github.com/IceWhaleTech/CasaOS-MessageBus/model"
+	"github.com/BeesNestInc/CassetteOS-Common/utils/constants"
+	"github.com/BeesNestInc/CassetteOS-MessageBus/common"
+	"github.com/BeesNestInc/CassetteOS-MessageBus/model"
 	"gopkg.in/ini.v1"
 )
 

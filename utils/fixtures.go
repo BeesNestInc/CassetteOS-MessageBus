@@ -1,7 +1,7 @@
 package utils
 
 import (
-	"github.com/IceWhaleTech/CasaOS-MessageBus/pkg/ysk"
+	"github.com/BeesNestInc/CassetteOS-MessageBus/pkg/ysk"
 )
 
 var (
@@ -38,7 +38,7 @@ var (
 					Style: "primary",
 					Text:  "Learn more",
 					MessageBus: ysk.YSKCardMessageBusAction{
-						Key:     "casaos-ui/casaos-ui:app:mircoapp_communicate",
+						Key:     "cassetteos-ui/cassetteos-ui:app:mircoapp_communicate",
 						Payload: `{"action":"open","peerType":"settings","name":"icewhale_settings","routerPath":"/storage"}`,
 					},
 				},
@@ -65,7 +65,7 @@ var (
 					Style: "primary",
 					Text:  "Learn more",
 					MessageBus: ysk.YSKCardMessageBusAction{
-						Key:     "casaos-ui/casaos-ui:app:mircoapp_communicate",
+						Key:     "cassetteos-ui/cassetteos-ui:app:mircoapp_communicate",
 						Payload: `{"action":"open","peerType":"settings","name":"icewhale_settings","routerPath":"/network"}`,
 					},
 				},
@@ -92,7 +92,7 @@ var (
 					Style: "primary",
 					Text:  "Learn more",
 					MessageBus: ysk.YSKCardMessageBusAction{
-						Key:     "casaos-ui:open_files",
+						Key:     "cassetteos-ui:open_files",
 						Payload: `{"url": "/modules/icewhale_files/#"}`,
 					},
 				},
@@ -157,7 +157,7 @@ var (
 					Style: "primary",
 					Text:  "Manage",
 					MessageBus: ysk.YSKCardMessageBusAction{
-						Key:     "casaos-ui/casaos-ui:app:mircoapp_communicate",
+						Key:     "cassetteos-ui/cassos-ui:app:mircoapp_communicate",
 						Payload: `{"action":"open","peerType":"settings","name":"icewhale_settings","routerPath":"/storage"}`,
 					},
 				},

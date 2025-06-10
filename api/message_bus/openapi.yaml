@@ -1,18 +1,11 @@
 openapi: 3.0.3
 
 info:
-  title: CasaOS Message Bus API
+  title: CassetteOS Message Bus API
   version: v2
   description: |
-    <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/IceWhaleTech/logo/main/casaos/casaos_banner_dark_night_800px.png">
-        <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/IceWhaleTech/logo/main/casaos/casaos_banner_twilight_blue_800px.png">
-        <img alt="CasaOS" src="https://raw.githubusercontent.com/IceWhaleTech/logo/main/casaos/casaos_banner_twilight_blue_800px.png">
-    </picture>
 
-    CasaOS Message Bus accepts events and actions from various sources and delivers them to subscribers.
-
-    For issues and discussions, please visit the [GitHub repository](https://github.com/IceWhaleTech/CasaOS) or join [our Discord](https://discord.gg/knqAbbBbeX).
+    CassetteOS Message Bus accepts events and actions from various sources and delivers them to subscribers.
 
 servers:
   - url: /v2/message_bus
@@ -764,7 +757,7 @@ components:
           $ref: "#/components/schemas/YSKCardIcon"
         titleText:
           type: string
-          example: "CasaOS"
+          example: "CassetteOS"
         bodyProgress:
           $ref: "#/components/schemas/YSKCardProgress"
         bodyIconWithText:
@@ -801,7 +794,7 @@ components:
           $ref: "#/components/schemas/YSKCardIcon"
         description:
           type: string
-          example: "CasaOS"
+          example: "CassetteOS"
     
     YSKCardListItem:
       type: object
@@ -814,7 +807,7 @@ components:
           $ref: "#/components/schemas/YSKCardIcon"
         description:
           type: string
-          example: "CasaOS"
+          example: "CassetteOS"
         rightText:
           type: string
           example: "4 TB"
@@ -835,7 +828,7 @@ components:
           example: "view-details"
         text:
           type: string
-          example: "https://casaos.com"
+          example: "https://cassetteos.com"
         messageBus:
           $ref: "#/components/schemas/YSKCardMessageBusAction"
     
@@ -850,8 +843,8 @@ components:
           example: "open-url"
         payload:
           type: string
-          example: "https://casaos.com"
+          example: "https://cassetteos.com"
     
     YSKCardIcon:
       type: string
-      example: "https://raw.githubusercontent.com/IceWhaleTech/logo/main/casaos/casaos_banner_twilight_blue_800px.png"
+      example: ""

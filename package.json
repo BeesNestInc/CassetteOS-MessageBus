@@ -1,5 +1,5 @@
 {
-  "name": "@icewhale/casaos-messagebus-openapi",
+  "name": "@beesnestinc/cassetteos-messagebus-openapi",
   "version": "0.0.1",
   "scripts": {
     "build": "rm -rf dist && tsc && rm -rf generate",
@@ -8,12 +8,12 @@
     "generate:ts": "npx openapi-typescript-codegen --input ./api/message_bus/openapi.yaml --output ./generate",
     "start": "yarn generate:local && yarn build"
   },
-  "homepage": "https://github.com/IceWhaleTech/CasaOS-MessageBus#readme",
-  "description": "Casaos-MessageBus Typescript+Axios SDK",
+  "homepage": "https://github.com/BeesNestInc/CassetteOS-MessageBus#readme",
+  "description": "Cassetteos-MessageBus Typescript+Axios SDK",
   "keywords": [
-    "CasaOS-MessageBus",
+    "CassetteOS-MessageBus",
     "SDK",
-    "CasaOS-MessageBus Axios"
+    "CasstteOS-MessageBus Axios"
   ],
   "main": "dist/index",
   "files": [
@@ -30,6 +30,6 @@
     "openapi-typescript-codegen": "^0.23.0",
     "typescript": "^4.9.5"
   },
-  "author": "casaos",
+  "author": "beesnestinc",
   "license": "Apache-2.0"
 }

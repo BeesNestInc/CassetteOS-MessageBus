@@ -5,9 +5,9 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/IceWhaleTech/CasaOS-Common/utils/logger"
-	"github.com/IceWhaleTech/CasaOS-MessageBus/model"
-	"github.com/IceWhaleTech/CasaOS-MessageBus/pkg/ysk"
+	"github.com/BeesNestInc/CassetteOS-Common/utils/logger"
+	"github.com/BeesNestInc/CassetteOS-MessageBus/model"
+	"github.com/BeesNestInc/CassetteOS-MessageBus/pkg/ysk"
 	"github.com/glebarez/sqlite"
 	"go.uber.org/zap"
 	"gorm.io/gorm"

@@ -1,8 +1,8 @@
 package repository
 
 import (
-	"github.com/IceWhaleTech/CasaOS-MessageBus/model"
-	"github.com/IceWhaleTech/CasaOS-MessageBus/pkg/ysk"
+	"github.com/BeesNestInc/CassetteOS-MessageBus/model"
+	"github.com/BeesNestInc/CassetteOS-MessageBus/pkg/ysk"
 )
 
 type Repository interface {

@@ -5,7 +5,7 @@ import (
 	"encoding/json"
 	"errors"
 
-	"github.com/IceWhaleTech/CasaOS-MessageBus/codegen"
+	"github.com/BeesNestInc/CassetteOS-MessageBus/codegen"
 )
 
 type (

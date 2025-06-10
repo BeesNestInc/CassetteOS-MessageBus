@@ -1,8 +1,8 @@
 package in
 
 import (
-	"github.com/IceWhaleTech/CasaOS-MessageBus/codegen"
-	"github.com/IceWhaleTech/CasaOS-MessageBus/model"
+	"github.com/BeesNestInc/CassetteOS-MessageBus/codegen"
+	"github.com/BeesNestInc/CassetteOS-MessageBus/model"
 )
 
 func PropertyTypeAdapter(propertyType codegen.PropertyType) model.PropertyType {
