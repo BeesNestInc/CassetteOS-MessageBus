@@ -27,3 +27,5 @@ up.sh
 CassetteOS-MessageBus
 codegen/
 third_party_licenses/
+openapitools.json
+yarn.lock
