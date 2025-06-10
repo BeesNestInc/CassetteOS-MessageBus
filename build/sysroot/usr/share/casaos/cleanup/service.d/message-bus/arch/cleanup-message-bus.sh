@@ -3,12 +3,12 @@
 set -e
 
 readonly CASA_SERVICES=(
-    "casaos-message-bus.service"
+    "cassetteos-message-bus.service"
 )
 
-readonly CASA_EXEC=casaos-message-bus
-readonly CASA_CONF=/etc/casaos/message-bus.conf
-readonly CASA_DB=/var/lib/casaos/db/message-bus.db
+readonly CASA_EXEC=cassetteos-message-bus
+readonly CASA_CONF=/etc/cassetteos/message-bus.conf
+readonly CASA_DB=/var/lib/cassetteos/db/message-bus.db
 
 readonly aCOLOUR=(
     '\e[38;5;154m' # green  	| Lines, bullets and separators

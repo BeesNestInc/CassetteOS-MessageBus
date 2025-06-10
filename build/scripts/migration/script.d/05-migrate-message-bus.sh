@@ -62,9 +62,9 @@ BUILD_PATH=$(dirname "${BASH_SOURCE[0]}")/../../..
 readonly BUILD_PATH
 readonly SOURCE_ROOT=${BUILD_PATH}/sysroot
 
-readonly APP_NAME="casaos-message-bus"
+readonly APP_NAME="cassetteos-message-bus"
 readonly APP_NAME_SHORT="message-bus"
-readonly APP_NAME_LEGACY="casaos"
+readonly APP_NAME_LEGACY="cassetteos"
 
 # check if migration is needed
 readonly SOURCE_BIN_PATH=${SOURCE_ROOT}/usr/bin
