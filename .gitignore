@@ -25,3 +25,4 @@ dist/
 .package-lock.json
 up.sh
 CasaOS-MessageBus
+codegen/
