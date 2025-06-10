@@ -6,19 +6,19 @@ import (
 	"fmt"
 	"os"
 
-	interfaces "github.com/IceWhaleTech/CasaOS-Common"
-	"github.com/IceWhaleTech/CasaOS-Common/utils/systemctl"
-	"github.com/IceWhaleTech/CasaOS-MessageBus/common"
+	interfaces "github.com/BeesNestInc/CassetteOS-Common"
+	"github.com/BeesNestInc/CassetteOS-Common/utils/systemctl"
+	"github.com/BeesNestInc/CassetteOS-MessageBus/common"
 )
 
 const (
-	messageBusConfigDirPath  = "/etc/casaos"
-	messageBusConfigFilePath = "/etc/casaos/message-bus.conf"
-	messageBusName           = "casaos-message-bus.service"
+	messageBusConfigDirPath  = "/etc/cassetteos"
+	messageBusConfigFilePath = "/etc/cassetteos/message-bus.conf"
+	messageBusName           = "cassetteos-message-bus.service"
 	messageBusNameShort      = "message-bus"
 )
 
-//go:embedded ../../build/sysroot/etc/casaos/message-bus.conf.sample
+//go:embedded ../../build/sysroot/etc/cassetteos/message-bus.conf.sample
 // var _messageBusConfigFileSample string
 
 var (

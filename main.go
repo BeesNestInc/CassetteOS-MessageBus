@@ -15,17 +15,17 @@ import (
 	"strings"
 	"time"
 
-	"github.com/IceWhaleTech/CasaOS-Common/external"
-	"github.com/IceWhaleTech/CasaOS-Common/model"
-	"github.com/IceWhaleTech/CasaOS-Common/utils/file"
-	util_http "github.com/IceWhaleTech/CasaOS-Common/utils/http"
-	"github.com/IceWhaleTech/CasaOS-Common/utils/logger"
-	"github.com/IceWhaleTech/CasaOS-MessageBus/codegen"
-	"github.com/IceWhaleTech/CasaOS-MessageBus/common"
-	"github.com/IceWhaleTech/CasaOS-MessageBus/config"
-	"github.com/IceWhaleTech/CasaOS-MessageBus/repository"
-	"github.com/IceWhaleTech/CasaOS-MessageBus/route"
-	"github.com/IceWhaleTech/CasaOS-MessageBus/service"
+	"github.com/BeesNestInc/CassetteOS-Common/external"
+	"github.com/BeesNestInc/CassetteOS-Common/model"
+	"github.com/BeesNestInc/CassetteOS-Common/utils/file"
+	util_http "github.com/BeesNestInc/CassetteOS-Common/utils/http"
+	"github.com/BeesNestInc/CassetteOS-Common/utils/logger"
+	"github.com/BeesNestInc/CassetteOS-MessageBus/codegen"
+	"github.com/BeesNestInc/CassetteOS-MessageBus/common"
+	"github.com/BeesNestInc/CassetteOS-MessageBus/config"
+	"github.com/BeesNestInc/CassetteOS-MessageBus/repository"
+	"github.com/BeesNestInc/CassetteOS-MessageBus/route"
+	"github.com/BeesNestInc/CassetteOS-MessageBus/service"
 	"github.com/coreos/go-systemd/daemon"
 	"go.uber.org/zap"
 )
@@ -42,7 +42,7 @@ var (
 	//go:embed api/message_bus/openapi.yaml
 	_docYAML string
 
-	//go:embed build/sysroot/etc/casaos/message-bus.conf.sample
+	//go:embed build/sysroot/etc/cassetteos/message-bus.conf.sample
 	_confSample string
 
 	unixSocketPath = "/tmp/message-bus.sock"
