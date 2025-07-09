@@ -1,9 +1,11 @@
 module github.com/BeesNestInc/CassetteOS-MessageBus
 
-go 1.20
+go 1.21
+
+toolchain go1.21.7
 
 require (
-	github.com/BeesNestInc/CassetteOS-Common v0.4.15-alpha1-cs1.1.2
+	github.com/BeesNestInc/CassetteOS-Common v0.0.1
 	github.com/CorrectRoadH/go-socket.io v1.8.0-rc.5
 	github.com/glebarez/sqlite v1.7.0
 	github.com/gobwas/ws v1.1.0
