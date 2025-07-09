@@ -1,0 +1,13 @@
+[Unit]
+After=cassetteos-gateway.service
+Description=CassetteOS Message Bus Service
+
+[Service]
+ExecStartPre=/usr/bin/cassetteos-message-bus -v
+ExecStart=/usr/bin/cassetteos-message-bus -c /etc/cassetteos/message-bus.conf
+PIDFile=/var/run/cassetteos/message-bus.pid
+Restart=always
+Type=notify
+
+[Install]
+WantedBy=multi-user.target

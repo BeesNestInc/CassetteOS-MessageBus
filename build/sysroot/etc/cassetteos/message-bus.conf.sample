@@ -1,0 +1,7 @@
+[common]
+RuntimePath=/var/run/cassetteos
+
+[app]
+LogPath=/var/log/cassetteos
+LogSaveName=message-bus
+LogFileExt=log
