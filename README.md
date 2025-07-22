@@ -1,31 +1,4 @@
 # CassetteOS-MessageBus
+このリポジトリは CassetteOS のメッセージ管理を行うコンポーネントです。  
 
-Message bus accepts events and actions from various sources and delivers them to subscribers.
-
-See [openapi.yaml](./api/message_bus/openapi.yaml) for API specification.
-
-
-
-
-## publish api to npm
-
-### edit version in package.json
-
-### run
-```bash
-yarn
-
-yarn start
-```
-
-### publish
-
-Manual publish
-```bash
-yarn publish
-```
-
-Auto publish
-```bash 
-git push origin dev**
-```
+本リポジトリは IceWhaleTech の [CasaOS-MessageBus](https://github.com/IceWhaleTech/CasaOS-MessageBus) をフォークし、CassetteOS 向けに名称変更と最小限の調整を行ったものです。
